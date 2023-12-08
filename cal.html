@@ -1,110 +1,68 @@
+
+ <!DOCTYPE html>
 <html>
 <head>
-<title> practice </title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-</head>
+<title>Calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initila-scale=1.0">
 <style>
-body{
-margin:0px;
-font-family:arial;
-
+body {
+background-color:black;
 }
-p{
-background-color:blue;
-color:white;
-height:55px;
-font-size:27px;
-font-weight:bold;
-text-align:center;
-font-family:arial;
-margin:0px;
+button {
+border: 2px solid black;
+border-radius: 15px;
+padding: 20px, 20px;
+width: 80px;
+height: 50px;
+font-size: 30px;
+background-color: #ffffff;
 }
-.span{
-font-family:arial;
-font-size:18px;
-margin:5px;
-color:black;
-text-align:justify;
+button:hover {
+background-color: #00fff0;
+cursor: pointer;
+box-shadow: 0 16px 30px rgba(0,  0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.21);
 }
-ul{
-font-size:23px;
-font-weight:bold;
-font-family:cambria;
-margin:0px;
+input{
+text-align: right;
+padding:30px;
 }
-ol{
-font-size:20px;
-
+form{
+display:block;
+flex-direction:row;
+align-items: center;
 }
-h2{
-display:flex;
-margin:5px;
-font-family:arial;
-font-size:30px;
-color:blue;
-text-shadow:2px 2px skyblue;
-}
-.features{
-margin:0px;
-padding:0px;
-font-family:cambria;
-
-}
-#contact{
-display:flex;
-margin:5px;
-font-family:arial;
-font-size:30px;
-color:blue;
-text-shadow:2px 2px skyblue;
-}
-img{
-height:30px;
-width:30px;
-float:left;
-}
-
 </style>
+</head>
 <body>
-<p >
-Mhycon Cruiz Graphics
-<img src="" />
-</p>
-<h1 class="span">
-We are your premier Graphics & Printing partner in Epe, Lagos. We are dedicated for providing high-quality 
-Graphics solutions for Businesses,
-Schools, Organizations, and Individuals. With our state-of-the-art 
-equipment and experiences, we deliver exceptional  results 
-that exceed your expectations. Explore our range of services and 
-discover how we can bring  your Graphics & Printing projects to life.
-</h1>
-
-<h2>
-Our Services 
-</h2>
-<ul>
-<li> Graphics Design </li>
-<li> Web Design & Development </li>
-<li> Typing and Printing of documents </li>
-</ul>
-<div class="features">
-<ol>
-<li> <strong> <u>Graphics Design</strong> </u>: We give best
-business card design, logo design, id card design, poster design, flex banner designs.
-Our design wil effectively showcase your business, company. 
-</li>
-<li> <strong> <u>Web design and development</strong> </u>: We develop, design, create
-and build dynamic websites which will attracts customers to your business or organization.</li>
-<li> <strong> <u> Typing and Printing </strong> </u>: You can visit us online for 
-your typing jobs and documents or offline at 9 Edatomola Ogundipe, Street, Epe Lagos State
-
-</li>
-<ol>
-</div>
-<h3 id="contact">
-CONTACT US </h3>
-<h2>
-<img src="https://www.pngitem.com/middle/mJRihb_nearby-transparent-background-address-icon-hd-png-download/icon/" /> 9 edatomola ogundipe street alrisku epe lagos state
+<form name="elements">
+<input type="textfield" name="calculate" value="" placeholder="0" id="calculate"><br/>
+<button type="button" onclick="document.elements.calculate.value +='0xA'">A</button>
+<button type="button" onclick="document.elements.calculate.value +='('">(</button>
+<button type="button" onclick="document.elements.calculate.value +=')'">)</button>
+<button type="button" onclick="document.elements.calculate.value **=2">x<sup>2</sup></button>
+<button type="reset">CE</button> 
+<button type="button" onclick="document.elements.calculate.value +='0xB'">B</button>
+<button type="button" onclick="document.elements.calculate.value +='9'">9</button>
+<button type="button" onclick="document.elements.calculate.value +='8'">8</button>
+<button type="button" onclick="document.elements.calculate.value +='7'">7</button>
+<button type="button" onclick="document.elements.calculate.value +='/'">/</button>
+<button type="button" onclick="document.elements.calculate.value +=0xC">C</button>
+<button type="button" onclick="document.elements.calculate.value +='6'">6</button>
+<button type="button" onclick="document.elements.calculate.value +='5'">5</button>
+<button type="button" onclick="document.elements.calculate.value +='4'">4</button>
+<button type="button" onclick="document.elements.calculate.value +='*'">&times;</button>
+<button type="button" onclick="document.elements.calculate.value +='0xD'">D</button>
+<button type="button" onclick="document.elements.calculate.value +='3'">3</button>
+<button type="button" onclick="document.elements.calculate.value +='2'">2</button>
+<button type="button" onclick="document.elements.calculate.value +='1'">1</button>
+<button type="button" onclick="document.elements.calculate.value +='-'">-</button>
+<button type="button" onclick="document.elements.calculate.value +='0xE'">E</button>
+<button type="button" onclick="document.elements.calculate.value +='0'">0</button>
+<button type="button" onclick="document.elements.calculate.value +='.'">.</button>
+<button type="button" onclick="document.elements.calculate.value +='+'">+</button>
+<button type="button" onclick="document.elements.calculate.value=eval(document.elements.calculate.value)">=</button> 
+<marquee> Developed by Musakalam</marquee>
+</form>
 </body>
 </html>
